@@ -2,9 +2,9 @@ body {
     overflow-y: scroll;
     overflow-x: none;
     overflow-x: hidden;
-    background-image: url("wetransfer/bg-elle.webp");
+    background-image: url("wetransfer/bg-elle.png");
     background-attachment: fixed;
-    background-size: cover;
+    background-size: fill;
 }
 
 ::-webkit-scrollbar {
@@ -91,12 +91,14 @@ nav {
 #card,
 #card-small,
 #card-mob {
-    border-radius: 30px;
     border: none;
     overflow-y: auto;
     align-items: center;
 }
 
+#card-mob {
+    border-radius: 0px;
+}
 #card-menu> :first-child {
     border-radius: 0px;
     border-top-left-radius: 2px;
@@ -124,14 +126,18 @@ nav {
     height: 50vh;
     width: 100%;
     object-fit: cover;
-    border-radius: 30px;
 }
+
 
 #card-small img {
     height: 50vh;
-    width: 49%;
+    width: 100%;
     object-fit: cover;
-    border-radius: 30px;
+}
+
+#Home-4 img {
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 #card-menu :nth-child(1) img {
@@ -148,7 +154,6 @@ nav {
 #menu-tab button {
     background-color: transparent;
     color: white;
-    width: 28%;
     border-left: none;
     border-top: none;
     border-right: none;
@@ -157,10 +162,8 @@ nav {
 }
 
 #btn-verstuur {
-    border-color: white;
     background-color: rgba(125, 89, 101, 0.9);
     color: white;
-    border-width: 2px;
     font-size: clamp(0.9em, 1.5vw, 2em);
 }
 
@@ -171,4 +174,3 @@ footer {
 #review {
     height: 100px;
 }
-
