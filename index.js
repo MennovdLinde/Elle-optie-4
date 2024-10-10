@@ -44,10 +44,10 @@ fetch("home.html")
   .then((response) => response.text())
   .then((html) => (document.getElementById("nav-home").innerHTML = html));
 
-fetch("events.html")
+fetch("planning.html")
   .then((response) => response.text())
   .then((html) => {
-    document.getElementById("nav-events").innerHTML = html;
+    document.getElementById("nav-planning").innerHTML = html;
   });
 
 fetch("menu.html")
