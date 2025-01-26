@@ -99,6 +99,10 @@ nav {
 #card-mob {
     border-radius: 0px;
 }
+.carousel-item,
+.carousel-inner {
+    border-radius: 20px;
+}
 #card-menu> :first-child {
     border-radius: 0px;
     border-top-left-radius: 2px;
@@ -119,7 +123,6 @@ nav {
     height: 56vh;
     width: 100%;
     object-fit: cover;
-    border-radius: 30px;
 }
 
 #card-mob img {
