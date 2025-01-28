@@ -120,7 +120,7 @@ p {
 }
 
 #card img {
-    height: 56vh;
+    height: 53vh;
     width: 100%;
     object-fit: cover;
 }
@@ -132,7 +132,7 @@ p {
 }
 
 #card-small img {
-    height: 50vh;
+    height: 53vh;
     width: 100%;
     object-fit: cover;
 }
