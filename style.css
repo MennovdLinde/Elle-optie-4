@@ -4,7 +4,7 @@ body {
     background-image: url("images-small/bg-elle.png");
     background-attachment: fixed;
     background-size: cover;
-        background-position: center;
+    background-position: center;
         background-repeat: no-repeat;
 }
 
@@ -17,9 +17,11 @@ nav {
     z-index: 3;
 }
 
-p {
+p,
+li {
     font-size: large;
 }
+
 #contentMask {
     background-color: rgba(125, 89, 101, 0.9);
     z-index: 2;
@@ -70,6 +72,11 @@ p {
     color: white;
 }
 
+#button-footer {
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+}
 #nav-tab button {
     color: white;
     border: none;
@@ -129,7 +136,9 @@ p {
     border-right: none;
     border-radius: 0px;
     border-width: 2px;
-    width: 20%;
+    flex-grow: 1;
+        min-width: min-content;
+        max-width: 40%;
         font-size: large;
 }
 
@@ -141,8 +150,69 @@ p {
 
 footer {
     background-color: rgba(125, 89, 101, 0.9);
+    width: 105vw;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @media (max-width: 767px) {
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        #footer-item {
+            margin-left: 120px;
+        }
 }
 
 #review {
     height: 100px;
+}
+.no-radius-bottom {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.yes-radius-bottom {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#card-text-item {
+    height: 175px;
+}
+
+.card-text li {
+    margin-bottom: 5px;
+}
+
+.image-grid {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-grid img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#behandeling-items {
+    display: flex;
+    flex-direction: column;
+}
+
+#behandeling-items .card {
+    flex-grow: 1;
+    /* Makes all cards stretch to the same height */
+    display: flex;
+    flex-direction: column;
 }
