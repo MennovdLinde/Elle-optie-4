@@ -19,7 +19,7 @@ nav {
 
 p,
 li {
-    font-size: large;
+    font-size: 1.05rem;
 }
 
 #contentMask {
@@ -191,7 +191,7 @@ footer {
 }
 
 .card-text li {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .image-grid {
@@ -201,7 +201,7 @@ footer {
 }
 
 .image-grid img {
-    height: 200px;
+    height: 150px;
     object-fit: cover;
     border-radius: 8px;
 }
