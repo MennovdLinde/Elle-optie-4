@@ -6,13 +6,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-bottom: 20px;
     }
-
-@media (max-width: 800px) {
-    body {
-        background-size: 100vw 120vh;
-    }
-}
 
 
 ::-webkit-scrollbar {
@@ -153,7 +148,7 @@ li {
 #btn-verstuur {
     background-color: rgba(125, 89, 101, 0.9);
     color: white;
-    font-size: clamp(0.9em, 1.5vw, 2em);
+    font-size: large;
 }
 
 footer {
