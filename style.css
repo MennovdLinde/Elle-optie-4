@@ -6,9 +6,13 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 20px;
-    }
+}
 
+@media (max-width: 800px) {
+    body {
+        margin-bottom: 200px;
+    }
+}
 
 ::-webkit-scrollbar {
     width: 0px;
