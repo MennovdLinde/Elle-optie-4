@@ -10,8 +10,9 @@
 
 @media (max-width: 800px) {
     body {
-        background-size: auto 180vh;
-            /* Increase height to 180% of viewport */
+        background-size: contain;
+            /* Ensures entire image fits inside */
+            background-repeat: no-repeat;
     }
 }
 
