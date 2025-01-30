@@ -5,9 +5,14 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-        background-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
 
+@media (max-width: 767px) {
+    body {
+        background-attachment: cover;
+    }
+}
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
@@ -140,7 +145,7 @@ li {
     flex-grow: 1;
         min-width: min-content;
         max-width: 40%;
-        font-size: large;
+        font-size: medium;
 }
 
 #btn-verstuur {
@@ -210,4 +215,12 @@ footer {
     /* Makes all cards stretch to the same height */
     display: flex;
     flex-direction: column;
+}
+.form-check-input:checked {
+    background-color: rgba(125, 89, 101, 0.9) !important;
+    border-color: rgba(125, 89, 101, 0.9) !important;
+}
+
+.form-check-input:focus {
+    box-shadow: none !important;
 }
