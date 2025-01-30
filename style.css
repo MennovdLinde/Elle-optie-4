@@ -1,4 +1,4 @@
-body {
+.body {
     overflow-y: scroll;
     overflow-x: hidden;
     background-image: url("images-small/bg-elle.png");
@@ -8,11 +8,6 @@ body {
     background-repeat: no-repeat;
 }
 
-@media (max-width: 767px) {
-    body {
-        background-attachment: cover;
-    }
-}
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
