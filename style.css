@@ -10,9 +10,7 @@
 
 @media (max-width: 800px) {
     body {
-        background-size: contain;
-            /* Ensures entire image fits inside */
-            background-repeat: no-repeat;
+        background-size: 100vw 120vh;
     }
 }
 
