@@ -150,7 +150,6 @@ li {
 }
 
 #btn-verstuur {
-    background-color: rgba(125, 89, 101, 0.9);
     color: white;
     font-size: large;
 }
@@ -224,4 +223,36 @@ footer {
 
 .form-check-input:focus {
     box-shadow: none !important;
+}
+
+.afspraak-card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(125, 89, 101, 0.9);
+    color: white;
+    border-radius: 5px;
+}
+
+.toggle-btn {
+    transition: transform 0.3s ease;
+}
+
+.afspraak-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0;
+}
+
+.afspraak-content.show {
+    max-height: 600px;
 }

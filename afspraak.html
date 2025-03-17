@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="container col-12 col-md-7">
+        <div class="row d-flex justify-content-center px-md-2">
+            <ul class="nav nav-tabs mb-2 mt-3 d-flex justify-content-evenly border-0 align-self-center" id="menu-tab"
+                role="tablist">
+                <button class="nav-link active" id="offerte-tab" data-bs-toggle="tab" data-bs-target="#offerte" type="button"
+                    role="tab" aria-controls="offerte" aria-selected="true">AFSPRAAK INPLANNEN</button>
+                <button class="nav-link" id="vraag-tab" data-bs-toggle="tab" data-bs-target="#vraag" type="button" role="tab"
+                    aria-controls="vraag" aria-selected="false">VRAAG</button>
+            </ul>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="card tab-content bg-transparent border-0">
+                <div class="tab-pane fade show active" id="offerte" role="tabpanel" aria-labelledby="offerte-tab">
+                    <div class="d-grid gap-3 my-4">
+                        <div class="afspraak-card">
+                            <div class="toggle-header d-flex justify-content-between align-items-center">
+                                <button class="btn" id="btn-verstuur">Trimmen & Knippen</button>
+                                <button class="toggle-btn border-0 bg-transparent">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                        <polygon points="4,7 12,17 20,7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="afspraak-content" style="max-height: 0; overflow: hidden;">
+                                <iframe id="trimmen" src="https://calendly.com/elamers17/trimmen-knippen" width="100%" height="600px" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    
+                        <div class="afspraak-card">
+                            <div class="toggle-header d-flex justify-content-between align-items-center">
+                                <button class="btn" id="btn-verstuur">Plukken</button>
+                                <button class="toggle-btn border-0 bg-transparent">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                        <polygon points="4,7 12,17 20,7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="afspraak-content" style="max-height: 0; overflow: hidden;">
+                                <iframe id="plukken" src="https://calendly.com/elamers17/plukken" width="100%" height="600px" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    
+                        <div class="afspraak-card">
+                            <div class="toggle-header d-flex justify-content-between align-items-center">
+                                <button class="btn" id="btn-verstuur">Wassen & Drogen</button>
+                                <button class="toggle-btn border-0 bg-transparent">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                        <polygon points="4,7 12,17 20,7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="afspraak-content" style="max-height: 0; overflow: hidden;">
+                                <iframe id="wassen" src="https://calendly.com/elamers17/wassen-en-drogen" width="100%" height="600px" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    
+                        <div class="afspraak-card">
+                            <div class="toggle-header d-flex justify-content-between align-items-center">
+                                <button class="btn" id="btn-verstuur">Puppywenbeurt</button>
+                                <button class="toggle-btn border-0 bg-transparent">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                        <polygon points="4,7 12,17 20,7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="afspraak-content" style="max-height: 0; overflow: hidden;">
+                                <iframe id="puppy" src="https://calendly.com/elamers17/puppywenbeurt" width="100%" height="600px" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="tab-pane fade" id="vraag" role="tabpanel" aria-labelledby="vraag-tab">
+                    <form method="post">
+                        <div class="form-floating my-4">
+                            <input type="text" class="form-control" id="floatingName" name="naam" placeholder="name">
+                            <label for="floatingName">Uw volledige naam</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                name="vraag" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Stel uw vraag</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="email" class="form-control" id="floatingEmail" name="email"
+                                placeholder="name@example.com">
+                            <label for="floatingEmail">Email</label>
+                        </div>
+                        <button type="submit" class="btn mb-4 btn-lg col-12" id="btn-verstuur" style="font-weight: bold; background-color: rgba(125, 89, 101, 0.9);">VERSTUUR</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        
+</body>
+
+</html>
+
+<!-- <form method="post">
+    <div class="form-floating my-4">
+        <input type="text" class="form-control" id="floatingName" name="naam" placeholder="name">
+        <label for="floatingName">Uw volledige naam</label>
+    </div>
+    
+    <div class="form-floating my-4">
+        <input type="tel" class="form-control" id="floatingPhone" name="telefoon" placeholder="123-456-7890">
+        <label for="floatingPhone">Telefoonnummer</label>
+    </div>
+    <div class="form-group my-4">
+        <select id="behandelingSelect" class="form-control" style="height: 55px;">
+            <option value="">Selecteer een behandeling...</option>
+            <option value="Trimmen en knippen">Trimmen en knippen</option>
+            <option value="Plukken">Plukken</option>
+            <option value="Wassen en drogen">Wassen en drogen</option>
+            <option value="Puppywenbeurt">Puppywenbeurt</option>
+        </select>
+    </div>
+    <div class="selected-treatments">
+        <ul id="selectedTreatments" class="list-group"></ul>
+    </div>
+    <div class="form-floating my-4">
+        <input type="date" class="form-control" id="floatingDateTime" name="datum"
+            placeholder="09-09-2023">
+        <label for="floatingDateTime">Datum</label>
+    </div>
+    <div class="form-floating my-4">
+        <input type="email" class="form-control" id="floatingEmail" name="email"
+            placeholder="name@example.com">
+        <label for="floatingEmail">Email</label>
+    </div>
+    <div class="form-check my-4">
+        <input class="form-check-input" type="checkbox" id="termsCheckboxVraag" name="terms">
+        <label class="form-check-label text-white" for="termsCheckboxVraag">
+            Ik ga akkoord met de algemene voorwaarden
+        </label>
+    </div>
+    <button type="submit" class="btn mb-4 btn-lg col-12" id="btn-verstuur"
+        >VERSTUUR</button>
+</form> -->
